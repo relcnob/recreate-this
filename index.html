@@ -11,52 +11,55 @@
   <body>
     <div id="content-wrapper">
       <header>
-        <ul class="global-menu">
-          <li>
-            <a href="index.html">
-              <span><img src="img/icons/home.svg" /></span>
-              <span>Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="shop.html">
-              <span><img src="img/icons/home.svg" /></span> <span>Shop</span></a
-            >
-          </li>
-          <li>
-            <a href="featured.html">
-              <span><img src="img/icons/home.svg" /></span>
-              <span>Featured</span></a
-            >
-          </li>
-        </ul>
-        <div class="header-logo">
-          <a href="index.html"><img src="img/icons/logo.png" /></a>
-        </div>
-        <div class="header-actions">
-          <label for="search"><img src="img/icons/search.svg" /></label>
-          <input type="text" placeholder="Search" id="search" />
-          <a href="login.html" class="link">Log in</a>
-          <a href="signup.html" class="btn">Join</a>
+        <div class="header-wrapper">
+          <ul class="global-menu">
+            <li>
+              <a href="index.html" class="active-menu">
+                <span><img src="img/icons/house.svg" /></span>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="shop.html">
+                <span><img src="img/icons/compass.svg" /></span>
+                <span>Shop</span></a
+              >
+            </li>
+            <li>
+              <a href="featured.html">
+                <span><img src="img/icons/star.svg" /></span>
+                <span>Featured</span></a
+              >
+            </li>
+          </ul>
+          <div class="header-logo">
+            <a href="index.html"><img src="img/icons/logo.png" /></a>
+          </div>
+          <div class="header-actions">
+            <label for="search"><img src="img/icons/search.svg" /></label>
+            <input type="text" placeholder="Search" id="search" />
+            <a href="login.html" class="link">Log in</a>
+            <a href="signup.html" class="btn">Join</a>
+          </div>
         </div>
       </header>
       <main>
         <section id="welcome-message">
           <h1>Canopy is Amazon, curated.</h1>
           <section>
-            <div>Lorem, ipsum dolor.</div>
-            <div>Lorem, ipsum dolor.</div>
-            <div>Lorem, ipsum dolor.</div>
+            <div>Learn about Canopy</div>
+            <div>Find great gifts</div>
+            <div>Join to save products</div>
           </section>
         </section>
         <section class="categories">
           <div>
             <a href="index.html">Trending</a>
-            <a href="index.html">New</a>
+            <a href="index.html" class="active-link">New</a>
             <a href="index.html">Most popular</a>
           </div>
-          <div>
-            <a href="index.html">Everything</a>
+          <div class="cat-filtering">
+            <a href="index.html" class="active-filter">Everything</a>
             <a href="index.html">Under $50</a>
             <a href="index.html">Prime</a>
           </div>
