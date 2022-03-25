@@ -75,6 +75,73 @@ header {
   z-index: 10;
 }
 
+footer {
+  width: 100%;
+  background-color: #fff;
+  padding: 3rem 15px;
+  font-size: 0.8rem;
+}
+
+footer section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.5rem 0;
+}
+/* footer sections */
+.footer-copy {
+  color: var(--textColor);
+}
+
+footer section ul li {
+  list-style-type: none;
+  color: var(--textColor);
+  cursor: pointer;
+}
+
+.footer-nav ul li {
+  color: var(--uiActive);
+  padding: 0.2rem 0;
+  width: fit-content;
+}
+
+.footer-nav ul li:hover {
+  text-decoration: underline;
+}
+
+.footer-legal ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-legal ul li {
+  transition: 0.3s ease;
+}
+
+.footer-legal ul li:hover {
+  color: var(--ui-active);
+  text-decoration: none;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-social ul li {
+  width: fit-content;
+}
+
+.footer-social ul li a img {
+  opacity: 0.3;
+  transition: 0.3s ease;
+  width: 20px;
+}
+
+.footer-social ul li a img:hover {
+  opacity: 0.75;
+}
+/* header */
+
 .header-wrapper {
   display: flex;
   flex-direction: row;
@@ -95,17 +162,21 @@ header {
   list-style-type: none;
 }
 
+.global-menu li a {
+  opacity: 0.3;
+  transition: 0.3s ease-in-out;
+  color: var(--uiActive);
+}
+
 .global-menu li span:nth-child(2) {
   display: none;
 }
 
 .global-menu img {
-  opacity: 0.3;
-  transition: 0.3s ease-in-out;
   height: 24px;
 }
 
-.global-menu img:hover {
+.global-menu a:hover {
   opacity: 0.75;
 }
 
@@ -279,6 +350,25 @@ header {
   right: 16px;
 }
 
+.verified {
+  padding-left: 2rem;
+}
+.verified:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background: url(/img/icons/checkmark.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 0.4rem;
+  position: absolute;
+  left: -0rem;
+  opacity: 0.75;
+  transition: 0.3s ease-in-out;
+}
+
 .pc-img-wrapper {
   width: 100%;
   height: 210px;
@@ -434,8 +524,41 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    font-size: 1.1rem;
+  }
   .product-list {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .global-menu li a {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .global-menu li span:nth-child(2) {
+    display: block;
+  }
+
+  .header-actions label {
+    border: none;
+    margin-right: -2.6rem;
+    z-index: 10;
+    opacity: 0.5;
+  }
+  .header-actions input {
+    display: initial;
+    background-color: var(--bgColor);
+    padding: 0.3rem 1.7rem;
+    border: none;
+    border-radius: 10rem;
+    position: relative;
+    z-index: 2;
+  }
+  footer {
+    font-size: 1rem;
   }
 }
 
