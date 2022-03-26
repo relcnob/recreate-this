@@ -517,7 +517,7 @@ footer section ul li {
 .pc-add a {
   height: 24px;
   width: 24px;
-  background: url(/img/icons/add-circle.svg);
+  background: url(../img/icons/add-circle.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
