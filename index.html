@@ -37,16 +37,24 @@
           </div>
           <div class="header-actions">
             <label for="searchbar"><img src="img/icons/search.svg" /></label>
-            <input type="text" placeholder="Search" id="searchbar" />
-            <a href="login.html" class="link">Log in</a>
-            <a href="signup.html" class="btn">Join</a>
+            <div class="searchbar-wrapper">
+              <input type="text" placeholder="Search" id="searchbar" />
+              <span>Cancel</span>
+            </div>
+            <a href="#" class="link">Log in</a>
+            <a href="#" class="btn">Join</a>
           </div>
         </div>
       </header>
 
       <main>
         <section id="welcome-message">
-          <h1>Canopy is Amazon, curated.</h1>
+          <h1>
+            Canopy is Amazon, curated.<span
+              class="close-welcome-message"
+            ></span>
+          </h1>
+
           <section>
             <div>Learn about Canopy</div>
             <div>Find great gifts</div>

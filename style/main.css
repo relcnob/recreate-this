@@ -223,6 +223,37 @@ footer section ul li {
   height: 28px;
   cursor: pointer;
 }
+.searchbar-wrapper {
+  width: 100%;
+  height: 3rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.show-searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  height: 4.6rem;
+  z-index: 100;
+}
+
+.show-searchbar input {
+  display: initial;
+  width: 60%;
+  margin-right: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10rem;
+  border: solid 1px var(--uiColor);
+  cursor: pointer;
+}
 
 .header-actions label img {
   height: 16px;
@@ -241,11 +272,37 @@ footer section ul li {
 }
 
 /* welcome section */
-/* not displayed on mobile */
 #welcome-message {
   display: none;
   z-index: 9;
   position: relative;
+  position: relative;
+  transition: 0.5s ease;
+}
+
+#welcome-message h1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-welcome-message {
+  display: block;
+  background: url(../img/icons/close.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  right: 1rem;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.close-welcome-message:hover {
+  opacity: 0.55;
 }
 
 /* filtering options */
@@ -473,6 +530,11 @@ footer section ul li {
   opacity: 0.75;
 }
 
+.hide-welcome-message {
+  display: none;
+  visibility: hidden;
+}
+
 /* media queries */
 
 @media screen and (min-width: 545px) {
@@ -508,6 +570,12 @@ footer section ul li {
     border-left: solid 1px rgba(0, 0, 0, 0.1);
     border-right: solid 1px rgba(0, 0, 0, 0.1);
   }
+
+  .hide-welcome-message {
+    display: none !important;
+    opacity: 0;
+  }
+
   .categories {
     max-width: 1200px;
     margin: auto;
@@ -529,6 +597,7 @@ footer section ul li {
   }
   .product-list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
   }
   .global-menu li a {
     display: flex;
@@ -559,6 +628,41 @@ footer section ul li {
   }
   footer {
     font-size: 1rem;
+  }
+  .categories {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem inherit;
+    margin: 0.5rem auto;
+  }
+  #welcome-message {
+    font-size: 1.5rem;
+  }
+  .searchbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    background-color: #fff;
+    position: relative;
+    height: auto;
+  }
+  .searchbar-wrapper input {
+    width: auto;
+  }
+  .searchbar-wrapper span {
+    display: none;
+  }
+  .show-searchbar {
+    top: auto;
+    left: auto;
+    z-index: initial;
+    height: auto;
+  }
+
+  .show-searchbar input {
+    margin-right: auto;
   }
 }
 

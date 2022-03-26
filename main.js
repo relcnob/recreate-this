@@ -235,3 +235,26 @@ function getRandomInt(min, max) {
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
 }
+
+document
+  .querySelector(".close-welcome-message")
+  .addEventListener("click", function () {
+    document
+      .querySelector("#welcome-message")
+      .classList.toggle("hide-welcome-message");
+  });
+
+document
+  .querySelector(".header-actions label")
+  .addEventListener("click", function () {
+    document
+      .querySelector(".header-actions div")
+      .classList.toggle("show-searchbar");
+  });
+document
+  .querySelector(".header-actions .searchbar-wrapper span")
+  .addEventListener("click", function () {
+    document
+      .querySelector(".header-actions div")
+      .classList.toggle("show-searchbar");
+  });
