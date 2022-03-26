@@ -389,7 +389,7 @@ footer section ul li {
   height: 20px;
   width: 20px;
   display: inline-block;
-  background: url(/img/icons/arrow-right.svg);
+  background: url(../img/icons/arrow-right.svg);
   margin-left: 0.4rem;
   position: absolute;
   right: -6px;
@@ -415,7 +415,7 @@ footer section ul li {
   height: 20px;
   width: 20px;
   display: inline-block;
-  background: url(/img/icons/checkmark.svg);
+  background: url(../img/icons/checkmark.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -493,7 +493,7 @@ footer section ul li {
 .pc-like:before {
   height: 24px;
   width: 24px;
-  background: url(/img/icons/favourites.svg);
+  background: url(../img/icons/favourites.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
